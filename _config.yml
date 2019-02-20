@@ -1,0 +1,76 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Azure Pipeline
+email: tarun.jangra@hotmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Azure pipeline implementation using static website which will
+  execute whole build process and deploy it on AWS CloudFront.
+  We have used Azure pipeline, Docker, github, Jekyll and s3_website
+  to demonstrate the whole process.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jangratarun
+github_username:  tarunjangra
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+encoding: utf-8
+timezone: Asia/Calcutta
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+exclude:
+  - README.md
+  - LICENSE.txt
+  - Gemfile.lock
+  - Gemfile
+  - Rakefile
+  - httpd.conf
+  - id_rsa.enc
+  - s3cfg.enc
+  - uml
+  - node_modules
+  - vendor
+  - vagrant
+  - Vagrantfile
+  - semantic
+  - bin
+  - dist/components
+  - dist/semantic.js
+  - dist/semantic.css
+
+# jekyll-feed
+feed:
+  title: Azure Pipeline by Tarun Jangra
+  subtitle: Business, TAX, GST Blog
+  path: rss.xml
+
+sass:
+  style: compressed
+  deploy_style: compressed
+  compile_in_place: false
+
+# see https://github.com/pattex/jekyll-tagging
+tag_page_layout: tag-index
+tag_page_dir: tag
+
+# http://jch.penibelst.de/
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  comments: all
+  endings: all
