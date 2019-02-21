@@ -34,5 +34,5 @@ steps:
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'jekyll build --future && bundle exec rake deploy'
+    containerCommand: 'jekyll build --future && bundle exec rake print_env'
     detached: false
