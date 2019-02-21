@@ -21,4 +21,3 @@ steps:
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
     containerCommand: 'bundle install && bundle exec rake'
-    detached: false
