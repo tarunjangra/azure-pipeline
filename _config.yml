@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+name: azure-pipeline
 title: Azure Pipeline
 email: tarun.jangra@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -21,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   We have used Azure pipeline, Docker, github, Jekyll and s3_website
   to demonstrate the whole process.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://azure-pipeline.s3-website.ap-south-1.amazonaws.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jangratarun
 github_username:  tarunjangra
 
