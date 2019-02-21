@@ -1,11 +1,7 @@
 # encoding: utf-8
-
-require 'rubygems'
 require 'rake'
 require 'tempfile'
 require 'rake/clean'
-require 'net/http'
-require 'rubocop/rake_task'
 require 'yaml'
 
 task default: [
