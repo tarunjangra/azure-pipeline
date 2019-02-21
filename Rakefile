@@ -47,11 +47,7 @@ end
 
 desc 'Build site'
 task :build do
-  if File.exist? '_site'
-    done 'Jekyll site already exists in _site (run "rake clean" first)'
-  else
-    fail 'Jekyll failed' unless system('jekyll', 'build')
-  end
+  fail 'Jekyll failed' unless system('jekyll', 'build')
 end
 
 desc 'Print environment variables'
