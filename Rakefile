@@ -4,11 +4,6 @@ require 'tempfile'
 require 'rake/clean'
 require 'yaml'
 
-task default: [
-  :clean,
-  :build
-]
-
 def done(msg)
   puts msg + "\n\n"
 end
