@@ -6,9 +6,7 @@ require 'yaml'
 
 task default: [
   :clean,
-  :build,
-  :test,
-  :artifacts
+  :build
 ]
 
 def done(msg)

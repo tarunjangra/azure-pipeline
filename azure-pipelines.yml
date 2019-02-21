@@ -20,5 +20,5 @@ steps:
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'bundle exec rake build'
+    containerCommand: 'bundle exec rake'
     detached: false
