@@ -20,10 +20,10 @@ error_document: 404.html
 #   "assets/*": 6000
 #   "*": 300
 
-# gzip:
-#   - .html
-#   - .css
-#   - .md
+gzip:
+  - .html
+  - .css
+  - .md
 # gzip_zopfli: true
 
 # See http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region for valid endpoints
@@ -35,7 +35,7 @@ error_document: 404.html
 #   - those_folders_of_stuff
 #   - i_wouldnt_want_to_upload
 
-# s3_reduced_redundancy: true
+s3_reduced_redundancy: true
 
 # cloudfront_distribution_id: your-dist-id
 
