@@ -28,8 +28,11 @@ steps:
     containerRegistryType: 'Container Registry'
     action: 'Run an image'
     imageName: 'jekyll/builder:latest'
+    envVars: |
+      AWS_ACCESS_KEY_ID: "TESTING ACCESS KEY"
+      AWS_SECRET_ACCESS_KEY: "TESTING ACCESS KEY"
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'jekyll build --future && bundle exec rake deploy'
+    containerCommand: 'jekyll build; bundle exec rake deploy'
     detached: false
