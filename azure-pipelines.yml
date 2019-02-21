@@ -28,7 +28,6 @@ steps:
     containerRegistryType: 'Container Registry'
     action: 'Run an image'
     imageName: 'jekyll/builder:latest'
-    workingDirectory: '$(Build.SourcesDirectory):/srv/jekyll'
     envVars: |
       AWS_ACCESS_KEY_ID: $(aws_access_key)
       AWS_SECRET_ACCESS_KEY: $(aws_secret_key)
