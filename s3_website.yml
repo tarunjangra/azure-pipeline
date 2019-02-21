@@ -44,7 +44,7 @@ s3_reduced_redundancy: true
 
 # cloudfront_invalidate_root: true
 
-cloudfront_wildcard_invalidation: true
+#cloudfront_wildcard_invalidation: true
 
 # concurrency_level: 5
 
