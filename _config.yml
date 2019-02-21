@@ -40,19 +40,11 @@ exclude:
   - Gemfile.lock
   - Gemfile
   - Rakefile
-  - httpd.conf
-  - id_rsa.enc
-  - s3cfg.enc
   - uml
-  - node_modules
   - vendor
-  - vagrant
-  - Vagrantfile
-  - semantic
   - bin
-  - dist/components
-  - dist/semantic.js
-  - dist/semantic.css
+  - azure-pipelines.yml
+  - s3_website.yml
 
 # jekyll-feed
 feed:
