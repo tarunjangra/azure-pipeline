@@ -23,6 +23,17 @@ steps:
     containerCommand: '/bin/sh -c "jekyll build --future;bundle exec rake test"'
     detached: false
 - task: Docker@0
+  displayName: 'Create artifacts with npm'
+  inputs:
+    containerRegistryType: 'Container Registry'
+    action: 'Run an image'
+    imageName: 'jekyll/builder:latest'
+    volumes: |
+      $(build.sourcesDirectory):/srv/jekyll
+      $(build.binariesDirectory):/srv/jekyll/_site
+    containerCommand: '/bin/sh -c "echo Zipping artifacts to be used later."'
+    detached: false
+- task: Docker@0
   displayName: 'Deployment Execution'
   inputs:
     containerRegistryType: 'Container Registry'
