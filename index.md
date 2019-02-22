@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## Azure pipeline + Docker + Amazon S3
+# Azure pipeline + Docker + Amazon S3
 ![Azure](images/m-z.png){:width="250px"}
 ![Docker](images/docker.png){:width="150px"}
 ![Amazon S3](images/s3.png){:width="300px"}
