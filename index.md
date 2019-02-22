@@ -2,9 +2,9 @@
 layout: page
 ---
 
-## Azure pipeline + Docker + AWS S3 + Jekyll
+## Azure pipeline + Docker + Amazon S3
 ![Azure](images/m-z.png){:width="250px"}
-![Docker](images/docker.webp){:width="150px"}
+![Docker](images/docker.png){:width="150px"}
 ![Amazon S3](images/s3.png){:width="300px"}
 <br />
 ![Bearded Coffee](images/bearded-coffee.gif){:width="200px"}
