@@ -39,3 +39,4 @@ steps:
       $(build.binariesDirectory):/srv/jekyll/_site
     containerCommand: '/bin/sh -c "jekyll build --future;AWS_ACCESS_KEY_ID=$(aws_access_key_id) AWS_SECRET_ACCESS_KEY=$(aws_secret_access_key) bundle exec rake deploy"'
     detached: false
+    
