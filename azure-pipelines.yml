@@ -1,9 +1,4 @@
-# Jekyll site
-# Package your Jekyll site using the jekyll/builder Docker container image.
-# Add steps that build, test, save build artifacts, deploy, and more:
-# https://aka.ms/yaml
 
-# Target branch is Master Branch in git repository.
 trigger:
 - master
 
