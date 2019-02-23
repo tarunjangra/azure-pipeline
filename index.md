@@ -16,3 +16,5 @@ This is demonstration of Azure pipeline implementation using static website whic
 
 #### Public Pipeline
 [https://dev.azure.com/tarunjangra/Azure pipeline/_build](https://dev.azure.com/tarunjangra/Azure pipeline/_build)
+
+#### Thank You
